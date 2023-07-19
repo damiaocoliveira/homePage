@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: rgb(128, 228, 161);
+    width: 100vw;
+}
+
+.background2 {
+    background-color: rgba(255, 255, 255, 0.829);
+    width: 90vw;
+    height: 90vh;
+    display: flex center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+.container-principal {
+    max-width: 100vw;
+    width: 100%;
+}
+
+
+/***************** Cabeçalho ****************/
+
+.container__header {
+    width: 100%;
+    max-width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    padding: 30px;
+}
+
+.header__title {
+    padding: 0;
+    display: inline;
+    justify-content: space-around;
+}
+
+.header__title>h2>a>img> {
+    width: 100%;
+    max-width: 40px;
+    position: relative;
+    top: 3px;
+}
+
+.header__title>h2>a>span {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    /* texto bom vizinho */
+    text-decoration: none;
+}
+
+.header__navbar-list {
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+    justify-content: space-around;
+    gap: 20px;                          /* A gappropriedade define o tamanho do espaço entre as linhas e entre as colunas no layout flexbox, grid ou multi-coluna. É um atalho para as seguintes propriedades:
+
+    row-gap
+    column-gap */
+    margin: auto;
+}
+
+.list-item>a,
+.header__login>a {
+    color: rgb(0, 0, 0);
+    /* nav bar */
+    text-decoration: none;
+    /* tirar decoração do texto, retirar o grifado do texto */
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.list-item>a:hover,
+.header__login>a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(128, 228, 161);
+}
+
+.casas {
+    height: 130px;
+    width: 160px;
+}
+
+.texto_eco {
+    color: rgb(0, 0, 0);
+    width: 30%;
+    height: 10%;
+
+    display: flex;
+    display: block;
+    margin-left: 55%;
+    margin-top: 11%;
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.texto_pequeno {
+    font-size: 1em;
+    display: flex;
+    display: block;
+    margin-left: 55%;
+    margin-top: -1%;
+}
+
+
+/***************** BOTAO ****************/
+.botao {
+    position: relative;
+    background-color: #074b09;
+    border: none;
+    border-radius: 9px;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 8px;
+    width: 130px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+
+    display: flex;
+    display: block;
+    margin-left: 55%;
+    margin-top: 11%;
+    position: relative;
+    top: -99px;
+  }
+  
+  .botao:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .botao:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  img{
+    display: flex;
+    position: absolute;
+    top: 120px;
+    width: 60%;
+    margin-right: 33px;
+
+}
+
+
+
+/********** COMENTÁRIOS **********/
+/* border: 1px solid red; usamos para nos orientar onde estamos ao estilzar a página */
